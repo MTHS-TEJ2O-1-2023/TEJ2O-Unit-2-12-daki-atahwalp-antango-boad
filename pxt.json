@@ -6,7 +6,7 @@
         "radio": "*",
         "microphone": "*",
         "pxt-sonar": "github:microsoft/pxt-sonar#v0.0.5",
-        "neopixel": "github:microsoft/pxt-neopixel#v0.7.5"
+        "robotbit": "github:kittenbot/pxt-robotbit#v0.4.6"
     },
     "files": [
         "main.ts",

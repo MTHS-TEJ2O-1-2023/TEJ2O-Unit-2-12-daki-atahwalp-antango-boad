@@ -23,11 +23,11 @@ basic.showIcon(IconNames.Happy)
 input.onButtonPressed(Button.A, function () {
   basic.clearScreen()
   distanceFromObject = sonar.ping(
-  DigitalPin.P1,
-  DigitalPin.P2,
-  PingUnit.Centimeters
-)
-  if (distanceFromObject >= 10){
+    DigitalPin.P1,
+    DigitalPin.P2,
+    PingUnit.Centimeters
+  )
+  if (distanceFromObject >= 10) {
     // turning neopixels green
     neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Green))
     neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Green))
@@ -39,7 +39,7 @@ input.onButtonPressed(Button.A, function () {
     basic.showNumber(distanceFromObject)
     basic.showString('cm')
     basic.showIcon(IconNames.Happy)
-  
+
     // turning neopixels off
     neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
     neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
@@ -49,7 +49,9 @@ input.onButtonPressed(Button.A, function () {
 
   } else {
 
-    (distanceFromObject < 10)
+    // if distance is less than 10
+    distanceFromObject < 10
+
     // turning neopixels red
     neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
     neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
@@ -71,66 +73,3 @@ input.onButtonPressed(Button.A, function () {
 
   }
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

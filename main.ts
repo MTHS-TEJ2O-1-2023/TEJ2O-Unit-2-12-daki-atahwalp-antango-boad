@@ -23,114 +23,47 @@ basic.showIcon(IconNames.Happy)
 input.onButtonPressed(Button.A, function () {
   basic.clearScreen()
   distanceFromObject = sonar.ping(
-  DigitalPin.P1,
-  DigitalPin.P2,
-  PingUnit.Centimeters
-)
-  if (distanceFromObject >= 10){
-  // turning neopixels green
-  neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Green))
-  neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Green))
-  neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Green))
-  neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Green))
-  neopixelStrip.show()
+    DigitalPin.P1,
+    DigitalPin.P2,
+    PingUnit.Centimeters
+  )
+  if (distanceFromObject >= 10) {
+    // turning neopixels green
+    neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Green))
+    neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Green))
+    neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Green))
+    neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Green))
+    neopixelStrip.show()
 
-  // displaying distanceFromObject
-  basic.showNumber(distanceFromObject)
-  basic.showString('cm')
-  basic.showIcon(IconNames.Happy)
-  
-  // turning neopixels off
-  neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
-  neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
-  neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
-  neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
-  neopixelStrip.show()
+    // displaying distanceFromObject
+    basic.showNumber(distanceFromObject)
+    basic.showString('cm')
+    basic.showIcon(IconNames.Happy)
 
+    // turning neopixels off
+    neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
+    neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
+    neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
+    neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
+    neopixelStrip.show()
   } else {
+    // turning neopixels red
+    neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
+    neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
+    neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
+    neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
+    neopixelStrip.show()
 
-  (distanceFromObject < 10)
-  // turning neopixels red
-  neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
-  neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
-  neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
-  neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
-  neopixelStrip.show()
+    // displaying distanceFromObject
+    basic.showNumber(distanceFromObject)
+    basic.showString('cm')
+    basic.showIcon(IconNames.Happy)
 
-  // displaying distanceFromObject
-  basic.showNumber(distanceFromObject)
-  basic.showString('cm')
-  basic.showIcon(IconNames.Happy)
-
-  // turning neopixels off
-  neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
-  neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
-  neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
-  neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
-  neopixelStrip.show()
-
+    // turning neopixels off
+    neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
+    neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
+    neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
+    neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
+    neopixelStrip.show()
   }
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
